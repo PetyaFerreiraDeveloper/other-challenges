@@ -2,7 +2,7 @@ const fizzBuzz = require('./fizzbuzz');
 
 describe('fizzBuzz tests', () => {
     test('when given a number N, it returns an array from 1 to N', () => {
-        // arange
+        // arrange
         let N = 2;
         let expected = [1, 2];
 
