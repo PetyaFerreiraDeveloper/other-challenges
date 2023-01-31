@@ -1,4 +1,4 @@
-function arrayDiff2(arr1, arr2) {
+function arrayDiff(arr1, arr2) {
     // if(arr2.length === 0) {
     //     console.log(arr1);
     //     return arr1;
@@ -10,10 +10,10 @@ function arrayDiff2(arr1, arr2) {
     for(let el of arr2) {
         arr1 = arr1.filter(el1 => el1 !== el);
     }
-    console.log(arr1);
     return arr1;
     
 }
 
-arrayDiff2([1, 2, 3], [])
+arrayDiff([1, 2, 3], [])
+module.exports = arrayDiff;
 
