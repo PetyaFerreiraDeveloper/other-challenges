@@ -1,7 +1,10 @@
 function largestElements(num, array) {
-    if (num <= array.length) {
-        return array;
-    }
+
+    array.sort((a, b) => a - b);
+    let index = array.length - num;
+    let result = array.splice(index, num);
+    return result;
+
 }
 
 module.exports = largestElements;
