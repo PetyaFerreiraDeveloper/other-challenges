@@ -1,0 +1,38 @@
+/* Style the youtube logo */
+:root {
+    --scale: 2;
+}
+h1 {
+    color: #ff0000;
+}
+
+.wrapper {
+    position: relative;
+    background-color:#ff0000;
+    height: calc(var(--scale) * 70px);
+    width: calc(var(--scale) * 70px);
+    left: 20px;
+    border-radius: calc(var(--scale) * 4px);
+
+}
+
+.inner {
+    position: absolute;
+    background-color: white;
+    height: calc(var(--scale) * 35px);
+    width: calc(var(--scale) * 50px);
+    top: calc(var(--scale) * 17px);
+    left: calc(var(--scale) * 10px);
+    border-radius: calc(var(--scale) * 8px);
+}
+
+.triangle-right {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: calc(var(--scale) * 8px) solid transparent;
+    border-bottom: calc(var(--scale) * 8px) solid transparent;
+    border-left: calc(var(--scale) * 14px) solid #ff0000;
+    top: calc(var(--scale) * 28px);
+    left: calc(var(--scale) * 30px);
+}

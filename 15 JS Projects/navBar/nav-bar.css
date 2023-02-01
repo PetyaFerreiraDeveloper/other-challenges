@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+}
+
+nav {
+    background: rgb(209, 209, 209);
+    border: black solid 2px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.nav-toggle {
+    font-size: 1.5rem;
+    background: transparent;
+    color: rgb(236, 154, 0);
+    border-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.nav-toggle:hover {
+    transform: rotate(90deg);
+}
+
+.logo {
+    width: 70px;
+}
+
+.links a {
+    color: rgb(71, 71, 71);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.social-icons {
+    display: none;
+}
+
+.links {
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+
+.show-links {
+    height: auto;
+    padding: 0;
+}
+
+@media screen and (min-width: 800px) {
+    .nav-center {
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    .nav-header {
+        padding: 0;
+    }
+    .nav-toggle {
+        display: none;
+    }
+    .links {
+        height: auto;
+        display: flex;
+    }
+    .links a {
+        padding: 0;
+        margin: 0 0.5rem;
+    }
+    .links a:hover {
+        padding: 0;
+        background: transparent;
+    }
+    .social-icons {
+        display: flex;
+    }
+    .social-icons a {
+        margin: 0 0.5rem;
+        color:rgb(71, 71, 71);
+        transition: all 0.3s linear;
+    }
+}

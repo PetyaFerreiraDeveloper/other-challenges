@@ -1,0 +1,32 @@
+#center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#heading h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+    padding-bottom: 2em;
+}
+
+#heading p {
+    padding-bottom: 1em;
+    font-size: 50px;
+}
+button {
+    margin: 0.5em;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 1em;
+    cursor: pointer;
+    border: 1px solid rgb(165, 165, 165);
+}
+
+button:hover {
+    background-color: gray;
+    color: white;
+}

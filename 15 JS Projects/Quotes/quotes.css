@@ -1,0 +1,77 @@
+main {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 0.1rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1::after {
+    margin: 10px auto 0 auto;
+    display: block;
+    content: ' ';
+    background: rgb(16, 134, 55);
+    height: 0.5rem;
+    width: 5rem;
+}
+
+#info {
+    border: 1px solid red;
+    text-align: center;
+    background-color: lightgray;
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.buttons {
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fas.fa-arrow-left.fa-3x,
+.fas.fa-arrow-right.fa-3x {
+    color:  rgb(16, 134, 55);
+}
+
+.prev-button,
+.next-button {
+    margin-top: 0;
+    border: none;
+    background: transparent;
+    padding: 0 2em 0em 2em;
+}
+.prev-button:hover,
+.next-button:hover {
+    cursor: pointer;
+    background: rgb(201, 247, 187);
+} 
+
+#random {
+    font-size: 16px;
+    padding: 1em;
+    border-radius: 5px;
+    margin: 0 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#random:hover {
+    cursor: pointer;
+    background: rgb(105, 105, 105);
+    color: white;
+}

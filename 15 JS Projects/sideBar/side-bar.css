@@ -1,0 +1,96 @@
+/* SIDEBAR */
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar-toggle {
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    font-size: 2rem;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.logo {
+    width: 100px;
+    justify-self: center;
+}
+
+.close-button {
+    background: transparent;
+    border-color: transparent;
+    font-size: 2rem;
+    color: red;
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(207, 207, 207);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+    transition: all 0.3s linear;
+    transform: translate(-100%);  /*tthis will hide the sidebar */
+    border: black solid 2px;
+}
+/* to show the sidebar add the class show-sidebar to the aside element */
+.show-sidebar {
+    transform: translate(0);
+}
+@media screen and (min-width: 670px) {
+    .sidebar {
+        width: 400px;
+    }
+}
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.links a {
+    color: rgb(73, 73, 73);
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+}
+
+.links a:hover {
+    cursor: pointer;
+    background-color: wheat;
+}
+.social-icons {
+    justify-self: center;
+    display: flex;
+}
+.social-icons a{
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    color: rgb(73, 73, 73);
+}

@@ -1,0 +1,25 @@
+/* Style the LinkedIn logo */
+:root {
+    --scale: 2;
+}
+
+#wrapper {
+    position: relative;
+    margin: 100px auto;
+    /* top: 50px;
+    left: 50px; */
+    width: calc(var(--scale) * 50px);
+    height: calc(var(--scale) * 50px);
+    background: #2867B2;
+}
+
+#in {
+    color: white;
+    position: absolute;
+    font-size: calc(var(--scale) * 45px);
+    font-family: sans-serif;
+    font-weight: bold;
+    top: calc(var(--scale) * 1px);
+    left: calc(var(--scale) * 5px);
+   
+}
